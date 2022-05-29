@@ -1,0 +1,1 @@
+Have you ever been so motivated to build an automation script by something irritating, but in the end it comes out taking far longer than doing the one task, and you don't even get the script finished in the end? Let me tell you a story... byuctf{i_hate_counting_so_much_cl3XYZLn}

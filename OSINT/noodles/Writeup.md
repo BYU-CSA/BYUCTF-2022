@@ -1,0 +1,6 @@
+# I don't dream about noodles, dad Writeup
+This challenge starts off with an image of a statue of Po the Panda from the movie "Kung Fu Panda".  Reverse image searching or close observation can show that it is a statue.  From here, you can take this, plus the fact that the challenges are coming from BYU, to do a search of the statue on campus leading to a series of news articles about the statue in the Talmage Building on campus.  [This article](https://magazine.byu.edu/article/martial-art/) mentions in the last paragraph that the BYU alumni who worked on the movie have signed the foot of the statue.  Another google search can reveal that Jason Turner is the animator alumni who worked on it, thus the flag.
+
+Playtest Notes - That article says that there are signed **movie posters**. I couldn't find anything about the foot being signed, but I was still able to solve it by searching kung fu panda statue which led me to [this article](https://universe.byu.edu/2012/09/27/5-campus-locations-you-didnt-know-existed/) at the bottom which mentions Jason Turner. [This article](https://www.linkedin.com/pulse/do-you-know-why-statue-po-from-kung-fu-panda-talmage-building-olsen/) was also helpful.
+
+**Flag** - `byuctf{Jason_Turner}`

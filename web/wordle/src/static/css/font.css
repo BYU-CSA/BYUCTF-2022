@@ -1,0 +1,24 @@
+@font-face {
+    src: url("/static/font/ReadexPro-Regular.woff2") format("woff2"),
+         url("/static/font/ReadexPro-Regular.ttf") format("ttf");
+    font-family: ReadexPro;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url("/static/font/ReadexPro-Bold.woff2") format("woff2"),
+         url("/static/font/ReadexPro-Bold.ttf") format("ttf");
+    font-family: ReadexPro;
+    font-weight: bold;
+}
+
+:root {
+    font-size: 18px;
+    font-family: ReadexPro, sans-serif;
+}
+
+@media (max-width: 600px), (max-height: 600px) {
+    :root {
+        font-size: 12px;
+    }
+}

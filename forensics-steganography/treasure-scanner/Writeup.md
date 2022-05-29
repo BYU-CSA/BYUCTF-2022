@@ -1,0 +1,4 @@
+# Treasure Scanner Writeup
+`QRcode.jpg` file is actually a PNG file. Embedded within it using Least Significant Bit Stegonagraphy is an image that appears to be a treasure map of sorts. If you use a photo editor like GIMP or anything similar, you can take 2x2 black boxes and move them back to where they belong. Each X represents a 2x2 black box that needs to be moved back to the dot. This is best done by stacking the images on top of each other, changing the opacity of one of them to see the X's directly coordinating to 2x2 squares. This will reconstruct the QR Code and scanning that will give the flag.
+
+**Flag** - `byuctf{moving_black_boxes_is_fun}`

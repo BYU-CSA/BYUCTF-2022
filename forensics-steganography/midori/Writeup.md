@@ -1,0 +1,6 @@
+# 緑 Writeup
+This the Gameboy ROM for Pokemon Green, which never came out in English. The game will have to be played in Japanese. It can be run by downloading and running [a Gameboy emulator](https://mgba.io/), adding the ROM, and uploading the SAV file. The way I translated the text was by opening Google Lens on my phone and translating the Japanese text into English visually as I progressed. The name of the protagonist roughly translates to "the boy that possess the flag". If you combine the names of all the Pokemon currently in his loadout, it will be `ポケモン ミドり やった こと が あるか`, or `Have you ever done Pokemon Midori?`. The flag is the transliteration of all of their names together.
+
+Another option is using a Save Editor (like [Rhydon](https://github.com/SciresM/Rhydon)), which will parse the Save file and pull out all the interesting information, such as the name of the protagonist, the current loadout, Pokemon experience level, and more.
+
+**Flag** - `byuctf{pokemon_midori_yatta_koto_ga_aruka}`

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "meta.html" %}
+    <title>\\'0rd1€</title>
+    {% if debug %}
+        <script src="{{ url_for("static", filename="lib/vue.js") }}"></script>
+    {% else %}
+        <script src="{{ url_for("static", filename="lib/vue.min.js") }}"></script>
+    {% endif %}
+    <script src="{{ url_for("static", filename="lib/simple-keyboard.js") }}"></script>
+    <script src="{{ url_for("static", filename="js/wordle.js") }}" defer></script>
+    <script src="{{ url_for("static", filename="js/keyboard.js") }}" defer></script>
+
+    <link href="{{ url_for("static", filename="css/keyboard.css") }}" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="vue-root">
+    <header>
+        <h1>\\'0rd1€</h1>
+    </header>
+    <main>
+        <div id="game">
+            <div class="game-row" v-for="(row, rowInd) in grid">
+                <div class="game-cell" v-for="letterObj in row">
+                    <span>[[ letterObj.letter ]]</span>
+                </div>
+                <div></div>
+                <div class="hash-cell">[[ hashList[rowInd] ]]</div>
+            </div>
+        </div>
+        <div class="simple-keyboard-wrapper">
+            <div class="simple-keyboard"></div>
+        </div>
+        <div class="end-popup-wrapper" v-if="answer">
+            <div class="end-popup">
+                <h2>Results</h2>
+                <p>[[ answer ]]</p>
+                <div class="button-choice">
+                    <button v-on:click="reset">New Game</button>
+                    <button v-on:click="share">Share Game</button>
+                </div>
+            </div>
+        </div>
+        <p class="popup error" v-if="error">[[ error ]]</p>
+        <p class="popup" v-if="message">[[ message ]]</p>
+    </main>
+</div>
+</body>
+</html>
